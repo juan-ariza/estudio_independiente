@@ -1,0 +1,39 @@
+{
+  "rfc": "ar823847823",   //Estos son los datos del cliente del banco
+  "nombre": "Andres Ramirez",
+  "ciudad": "Choco",
+  "cuentas" : //En esta llave se abren dos valores que contienen las cuentas, para hacerlo se hace [{},{}]
+  [{
+    "no. cuenta" : 2874891,   //Esta es la cuenta 1
+    "tipo" : "ahorros",
+    "saldo" : 230000,
+    "movimientos" :  //En esta llave se abre el valor de los movientos realizados
+    [{
+      "idMovimieto" : 1,
+      "fecha" : "14/11/2022",
+      "monto" : 70000    //aqui no se pone coma porque es el ultimo valor de la llave y despues sigue otra llave
+    },{
+      "idMovimieto" : 2,
+      "fecha" : "13/11/2022",
+      "monto" : 50000    //aqui no se pone coma porque es el ultimo valor de la llave y despues sigue otra llave
+    },{
+      "idMovimieto" : 3,
+      "fecha" : "12/11/2022",
+      "monto" : 50000    //aqui no se pone coma porque es el ultimo valor de la llave y despues sigue otra llave
+    }]    
+  },{
+    "no. cuenta" : 4837483,  //Esta es la cuenta 2
+    "tipo" : "general",
+    "saldo" : 100000,
+    "movimientos" :   //En esta llave se abre el valor de los movientos realizados
+    [{ 
+      "idMovimieto" : 1,
+      "fecha" : "12/11/2022",
+      "monto" : 50000   //aqui no se pone coma porque es el ultimo valor de la llave y despues sigue otra llave
+    },{
+      "idMovimieto" : 2,
+      "fecha" : "12/11/2022",
+      "monto" : 50000   //aqui no se pone coma porque es el ultimo valor de la llave y despues sigue otra llave
+    }]    
+  }]  
+}
